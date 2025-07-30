@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="Old_Standard_TT.zip" rel="OldStandardTT">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Escalante & Estevez - Abogados</title>
   <style>
@@ -30,8 +30,8 @@
       left: 0;
       height: auto;
       width: 100%; /* Se extiende todo el ancho de la pantalla */
-      background-color: #002a47; /* Fondo de la barra de navegación */
-      color: rgb(6, 6, 6); /* Color de texto */
+      background-color: rgba(249,249,243,0.95); /* Fondo de la barra de navegación */
+      color: #020202; /* Color de texto */
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -42,6 +42,7 @@
 
     .logo-container {
       display: flex;
+      flex-direction: row;
       align-items: center;
       gap: 15px;
     }
@@ -51,7 +52,9 @@
      }
 
     .titulo-img {
-      height: 50px; /* Hacelo más grande si querés */
+      height: auto;
+      max-height: 60px;
+      max-width: 300px; /* ✅ probá ampliar este valor si querés más grande */
       object-fit: contain;
     }
 
@@ -62,7 +65,8 @@
     }
 
     .nav-links a {
-      color: rgb(255, 254, 254);
+      font-family: 'TT Hoves', serif; /* para títulos elegantes */
+      color: rgb(0, 0, 0);
       text-decoration: none;
       font-size: 1.1rem;
       font-weight: 500;
@@ -70,6 +74,7 @@
     }
 
     .nav-links a:hover {
+      font-family: 'TT Hoves', serif; /* para títulos elegantes */
       color: #c89c1c; /* Color dorado al pasar el mouse */
     }
     .menu-toggle {
@@ -189,19 +194,53 @@
     }
 
     .right-side h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: white;
     }
 
     .right-side h2 {
-      font-size: 2rem;
-      color: #c89c1c;
-      margin-bottom: 2rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+      color: #d2a849; /* dorado */
+    }
+
+    .right-side p {
+      max-width: 600px;
+      margin: 0 auto 1rem auto;
+      line-height: 1.6;
+    }
+
+    .right-side .cta {
+      margin-top: 2rem;
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #d2a849;
+    }
+
+    .boton-contacto {
+      margin-top: 2rem;
+      padding: 0.8rem 1.5rem;
+      background-color: #d2a849;
+      color: #002a47;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .boton-contacto:hover {
+      background-color: #f0cc63;
     }
 
     .contact-link {
+      font-family: 'TT Hoves', serif; /* para títulos elegantes */
       text-decoration: underline;
-      color: #cfd8dc;
+      color: #c89c1c;
       font-weight: bold;
       letter-spacing: 1px;
       font-size: 1.1rem;
@@ -209,6 +248,7 @@
 
     /* SERVICIOS */
     .servicios {
+      font-family: 'The Seasons', serif; /* para títulos elegantes */
       padding: 6rem 2rem;
       text-align: left;
       min-height: 100vh;
@@ -246,14 +286,23 @@
     }
 
     .servicio-item p {
+      font-family: 'TT Hoves', serif; /* para títulos elegantes */
+      font-size: 1,5rem;
+      font-weight: bold;
+      color: rgb(70, 69, 69);
+      text-decoration: underline;
+    }
+    .servicio-item h1 {
+      font-family: 'TT Hoves', serif; /* para títulos elegantes */
       font-size: 1rem;
       font-weight: bold;
-      color: darkgray;
+      color: rgb(129, 129, 129);
       text-decoration: underline;
     }
 
     /* QUIENES SOMOS */
     .quienes-somos {
+      font-family: 'The Seasons', serif; /* para títulos elegantes */
       padding: 6rem 2rem;
       background-color: rgba(249,249,243,0.95);
       text-align: left;
@@ -315,6 +364,7 @@
     }
 
     .dorso {
+      font-family: 'TT Hoves', serif; /* para títulos elegantes */
       background-color: #002a47;
       color: white;
       transform: rotateY(180deg);
@@ -326,9 +376,10 @@
     }
 
     .nombre {
+      font-family: 'TT Hoves', serif; /* para títulos elegantes */
       font-weight: bold;
       font-size: 1.1rem;
-      color: darkgray;
+      color: rgb(64, 64, 64);
     }
 
     /* NUEVO CONTACTO Y DATOS */
@@ -348,6 +399,7 @@
     }
 
     .titulo {
+      font-family: 'The Seasons', serif; /* para títulos elegantes */
       text-align: center;
       margin-bottom: 20px;
       color: black;
@@ -364,6 +416,7 @@
     }
 
     .formulario {
+      font-family: 'TT Hoves', serif; /* para títulos elegantes */
       width: 48%;
       padding: 2rem;
       background-color: rgba(249,249,243,0.95);
@@ -408,6 +461,7 @@
     }
 
     .datos-contacto {
+      font-family: 'TT Hoves', serif; /* para títulos elegantes */
       width: 48%;
       padding: 2rem;
       background-color: rgba(249,249,243,0.95);
@@ -492,7 +546,7 @@
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: rgba(249, 249, 243, 0.95);
+        background-color: rgba(145, 145, 144, 0.95);
         box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         z-index: 100;
       }
@@ -500,16 +554,22 @@
        display: flex;
       }
       .logo-container {
-       margin-bottom: 1rem;
-       flex: 1;
-       display: flex;
+       flex-direction: row; /* 🔥 Importante: seguir uno al lado del otro */
        align-items: center;
+       gap: 8px; /* un poco menos de espacio entre logo y título */
       }
 
-      .logo-container img {
-       width: 60px;
-       height: auto;
+      .logo-img {
+       height: 40px; /* Más chico en móvil */
+       flex-shrink: 0; /* Que no se achique de más */
       }
+
+      .titulo-img {
+       max-height: 50px;
+       max-width: 200px; /* Ajustás según lo que necesites */
+       object-fit: contain;
+      }
+
       .triangle {
        width: 100%; /* ocupa el 90% del ancho visible */
        height: auto;
@@ -735,8 +795,8 @@
   <!-- Barra de navegación -->
   <nav class="navbar">
     <div class="logo-container">
-      <img src="imagenes/logo1.jpeg" alt="Logo" class="logo-img">
-      <img src="imagenes/escalante.png" alt="Escalante & Estevez" class="titulo-img">
+      <img src="imagenes/E (1).png" alt="Logo" class="logo-img">
+      <img src="imagenes/tituloizquierda.png" alt="Escalante & Estevez" class="titulo-img">
     </div>
     <div class="menu-toggle" id="menu-toggle">☰</div>
     <div class="nav-links">
@@ -754,9 +814,15 @@
       </div>
     </div>
     <div class="right-side">
-      <h1>Escalante & Estevez</h1>
-      <h2>Abogados</h2>
-      <a href="#contactanos" class="contact-link">CONTACTO</a>
+      <h1>eAbogadosOnline</h1>
+      <h2>ESPECIALISTAS EN DERECHO LABORAL - EMPRESARIAL - DEPORTIVO Y SUCESORIO</h2>
+      
+      <p>ASESORAMIENTO LEGAL MODERNO Y CONFIABLE PARA FAMILIAS, TRABAJADORES Y EMPRENDEDORES.</p>
+      <p>UN SERVICIO DE ESCALANTE & ESTÉVEZ ABOGADOS CON MÁS DE 20 AÑOS DE EXPERIENCIA.</p>
+
+      <p class="cta">📲 LLAMÁ Y AGENDÁ TU CONSULTA ONLINE HOY MISMO</p>
+
+      <a href="#contactanos" class="boton-contacto">Contactanos</a>
     </div>
   </div>
 
@@ -765,28 +831,34 @@
     <h2>SERVICIOS</h2>
     <div class="servicios-grid">
       <div class="servicio-item">
-        <img src="imagenes/laboral.png" alt="Derecho Laboral">
+        <img src="imagenes/hombre trabajando en una fabrica.jpg" alt="Derecho Laboral">
         <p>DERECHO LABORAL</p>
+        <h1></h1>
       </div>
       <div class="servicio-item">
-        <img src="imagenes/sucesoria.png" alt="Planificación Sucesoria">
+        <img src="imagenes/familia que se reparte bienes.jpg" alt="Planificación Sucesoria">
         <p>PLANIFICACION SUCESORIA</p>
+        <h1></h1>
       </div>
       <div class="servicio-item">
-        <img src="imagenes/deportivo.png" alt="Contratos Deportivos">
+        <img src="imagenes/dentro de un triangulo un abogado de traje  con una pelota en la mano y un contrato con lapicera sobre el escritorio.jpg" alt="Contratos Deportivos">
         <p>CONTRATOS DEPORTIVOS</p>
+        <h1></h1>
       </div>
       <div class="servicio-item">
         <img src="imagenes/anillos.png" alt="Divorcios">
         <p>DIVORCIOS</p>
+        <h1></h1>
       </div>
       <div class="servicio-item">
-        <img src="imagenes/reunion.png" alt="Asesoramiento PYMES">
+        <img src="imagenes/una mesa de directorio con personas reunidas, documentos sobre la mesa.jpg" alt="Asesoramiento PYMES">
         <p>ASESORAMIENTO PYMES</p>
+        <h1></h1>
       </div>
       <div class="servicio-item">
-        <img src="imagenes/inmobiliarios.png" alt="Contratos Inmobiliarios">
+        <img src="imagenes/un abogado entregando llaves casa sobre una mano arriba de un escritorio y que debajo este un contrato inmobiliario.jpg" alt="Contratos Inmobiliarios">
         <p>CONTRATOS INMOBILIARIOS</p>
+        <h1></h1>
       </div>
     </div>
   </section>
@@ -812,7 +884,7 @@
         <div class="tarjeta">
           <div class="contenido-tarjeta">
             <div class="frente">
-              <img src="imagenes/papa1.jpeg" alt="Persona 2">
+              <img src="imagenes/papa.jpeg" alt="Persona 2">
             </div>
             <div class="dorso">
               <p>Abogado con experiencia en area empresarial y deportiva. Mi enfoque se centra en el asesoramiento integral de RRHH, y las distintas modalidades de contratos ya sea comerciales, laborales o deportivos,  mi capacidad queda demostrada en la confianza que me brindaron los clientes durante estos años y el exito es contribuir a su satisfaccion.</p>
@@ -827,12 +899,12 @@
   <!-- NUEVO CONTACTO Y DATOS -->
   <section class="contactanos" id="contactanos">
     <!-- LOGO -->
-    <img class="logo" src="imagenes/logo.png" alt="Logo">
+    <img class="logo" src="imagenes/E (1).png" alt="Logo">
 
     <!-- TÍTULO Y SUBTÍTULO -->
     <div class="titulo">
       <h1>Consultas y presupuestos</h1>
-      <p>Completá el formulario y te responderemos a la brevedad.</p>
+      <p>Completá el formulario y te responderemos lo más rápido posible.</p>
     </div>
 
     <!-- FORMULARIO Y DATOS DE CONTACTO -->
@@ -849,8 +921,8 @@
 
     <div class="datos-contacto">
       <h3>Datos de contacto</h3>
-      <p><img src="imagenes/tel-removebg-preview.png" alt="Teléfono" style="width: 20px; margin-right: 10px;">Dr Estevez: +54 9 11 3312-8468</p>
-      <p><img src="imagenes/tel-removebg-preview.png" alt="Teléfono" style="width: 20px; margin-right: 10px;">Dra Escalante: +54 9 11 3312-8471</p>
+      <p><img src="imagenes/tel-removebg-preview.png" alt="Teléfono" style="width: 20px; margin-right: 10px;">Dr: +54 9 11 3312-8468</p>
+      <p><img src="imagenes/tel-removebg-preview.png" alt="Teléfono" style="width: 20px; margin-right: 10px;">Dra: +54 9 11 3312-8471</p>
       <p><img src="imagenes/sobre2.png" alt="Email" style="width: 25px; margin-right: 15px;">escalanteyestevezabogados@gmail.com</p>
       <p><img src="imagenes/ubi-re.png" alt="Ubicación" style="width: 20px; margin-right: 10px;">Rivadavia 576 - Pte. Derqui</p>
       <p><img src="imagenes/time.webp" alt="Horario" style="width: 20px; margin-right: 10px;">Lun a Vie de 9:00 a 18:00 hs</p>
